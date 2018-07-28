@@ -11,7 +11,7 @@ Simple script to generate IPA file which is ready for re-singing
 - Generate IPA file with development provisioning profile
 
 # Problem
-- Uploading could receive *Invalid SwiftSupport* from iTune-Connect
+- Uploading could receive **Invalid Swift Support** from iTune-Connect
 
 # How to solve?
 You might following below steps:  
