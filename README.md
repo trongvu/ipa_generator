@@ -22,3 +22,8 @@ You might following below steps:
 
 # Sample
 Refer to sample script for demostration  
+Demo script contains 3 followng steps:  
+1. Generate xcarchive file  
+2. Export development build IPA file  
+3. Re-build IPA file which is ready for resigning process (re-sign with app-store configuration).  
+
