@@ -27,3 +27,6 @@ Demo script contains 3 followng steps:
 2. Export development build IPA file  
 3. Re-build IPA file which is ready for resigning process (re-sign with app-store configuration).  
 
+# How to use
+1. Copy sample script into project root  
+2. Run script with following command **./generate_ipa.sh MyApp** 
