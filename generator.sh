@@ -21,6 +21,12 @@ cp -R ../$1*.xcarchive/SwiftSupport .
 rm -rf Payload/*.app/Frameworks/
 cp -R ../$1*.xcarchive/Products/Applications/*.app/Frameworks Payload/*.app/
 
+#remove arm64e
+#refer https://developer.apple.com/documentation/xcode_release_notes/xcode_10_1_release_notes
+for i in Payload/*.app/Frameworks/libswift*.dylib; do
+    lipo ${i} -remove arm64e -output ${i}
+done
+
 #zipping
 zip -qr $1.zip Payload SwiftSupport
 mv $1.zip ../$1_${DATE}.ipa
